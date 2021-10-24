@@ -6,6 +6,7 @@ import TheirMessage from './TheirMessage';
 //Also handling event hooks so that one can do some actions once something happens.
 //for example you can do something on connect like play a sound or or do an animation also on the fail auth on new chat on new message we're going to use the on
 //new message hook that's going to allow us to put a sound notification once somebody sends a message
+//we need three different componenets, MyMessage, TheirMessage, and MessageForm 
 const ChatFeed = (props) => { 
     const {  activeChat, userName, messages,chats } = props;
 
