@@ -1,8 +1,13 @@
-import { ChatEngine } from 'react-chat-engine';
+/*
+install dependencies 
+npm install @ant-design/icons axios react-chat-engine
+and start using them.
+*/
 
+import { ChatEngine } from 'react-chat-engine'; 
 import ChatFeed from './components/ChatFeed';
 import LoginForm from './components/LoginForm';
-import './App.css';
+import './App.css'; // import App.css
 
 const App = () => {
     if(!localStorage.getItem('username')) return <LoginForm />
