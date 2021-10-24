@@ -1,8 +1,12 @@
 import MessageForm from './MessageForm';
 import MyMessage from './MyMessage';
 import TheirMessage from './TheirMessage';
-
-const ChatFeed = (props) => {
+//in the chatengine doc, it shows exctly what I can modify. like customizing UI part
+//Also having access to alot of unctions and api calls to manage the chat application
+//Also handling event hooks so that one can do some actions once something happens.
+//for example you can do something on connect like play a sound or or do an animation also on the fail auth on new chat on new message we're going to use the on
+//new message hook that's going to allow us to put a sound notification once somebody sends a message
+const ChatFeed = (props) => { 
     const {  activeChat, userName, messages,chats } = props;
 
     const chat = chats && chats[activeChat];
@@ -50,7 +54,7 @@ const ChatFeed = (props) => {
     
     if (!chat) return 'Loading...';
 
-    return (
+    return ( // what props are we getting from chatfeed
         <div className="chat-feed">
             <div className="chat-title-container">
                 <div className="chat-title">{chat.title}</div>
